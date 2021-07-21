@@ -1,0 +1,377 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+/* section 1 */
+#sect1 {
+  padding-top: 200px;
+  margin: 0px auto;
+  width: 1200px;
+}
+.box_container {
+  width: 100%;
+}
+.box {
+  position: relative;
+  float: left;
+  width: 600px;
+  height: 325px;
+  transition: all 0.5s ease;
+  font-family: "Noto Sans KR", sans-serif;
+  padding: 10px;
+}
+.box::after {
+  width: 100%;
+  height: 100%;
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  opacity: 0.5;
+  z-index: -1;
+  transition: all 0.5s ease-out;
+}
+.box:hover {
+  background: linear-gradient(113deg, #31b32b6b, #0083ff6b);
+}
+.box:hover::after {
+  opacity: 0.3;
+}
+.box:nth-child(1)::after {
+  background: url(../images/sect1_1.png);
+}
+.box:nth-child(2)::after {
+  background: url(../images/sect1_2.png);
+}
+.box:nth-child(3)::after {
+  background: url(../images/sect1_3.png);
+}
+.box:nth-child(4)::after {
+  background: url(../images/sect1_4.png);
+}
+.box:nth-child(5)::after {
+  background: url(../images/sect1_5.png);
+}
+.box:nth-child(6)::after {
+  background: url(../images/sect1_6.png);
+}
+.box:hover {
+  box-shadow: 8px 11px 15px 9px #3333338f;
+}
+.box h3 {
+  position: absolute;
+  left: 30px;
+  top: 30px;
+  font-size: 28px;
+  color: #000;
+  text-shadow: none;
+  transition: all 0.5s;
+}
+.box:hover h3 {
+  color: #fff;
+  text-shadow: 2px 2px 2px #0000007b;
+}
+.box p {
+  position: absolute;
+  left: 30px;
+  bottom: 70px;
+  font-size: 14px;
+  color: #fff;
+  opacity: 0;
+  transition: all 0.5s;
+}
+.box:hover p {
+  opacity: 1;
+  text-shadow: 2px 2px 2px #0000007b;
+}
+
+/* sectin 2 */
+#sect2 {
+  width: 1200px;
+  padding-top: 200px;
+  margin: 0px auto;
+}
+#sect2 .map_container {
+  width: 100%;
+  height: 500px;
+  background: url(../images/world_map.jpg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.map_container .map_title {
+  position: absolute;
+  left: 20px;
+  top: 30px;
+}
+.map_container .map_title h2 {
+  font-size: 34px;
+}
+.map_container .map_menu {
+  position: absolute;
+  left: 20px;
+  bottom: 15px;
+  z-index: 2;
+  background: #b3d2f9ad;
+}
+.map_container .map_menu ul {
+  width: 210px;
+}
+.map_container .map_menu ul li {
+  float: left;
+  width: 100px;
+  height: 36px;
+  line-height: 26px;
+  padding: 5px;
+  margin: 2px;
+  text-align: center;
+  font-size: 14px;
+  font-family: "Noto Sans", sans-serif;
+  cursor: pointer;
+  background: #fff;
+  transition: all 0.5s;
+}
+.map_container .map_menu ul li:hover {
+  background: #008bfd;
+  color: #fff;
+}
+.map_container .map_branch {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.map_container .map_branch .branch {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: #008bfd;
+  text-align: left;
+  font-family: "Noto Sans", sans-serif;
+  color: #fff;
+  padding: 20px;
+  display: none;
+  box-shadow: 4px 4px 11px 4px #0000007b;
+}
+.map_container .map_branch .branch h3 {
+  font-size: 25px;
+  padding-bottom: 30px;
+}
+.map_container .map_branch .branch p {
+  font-size: 14px;
+  line-height: 20px;
+}
+.map_container .map_branch .branch i {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.branch.asia {
+  top: 212px;
+  right: 82px;
+}
+.branch.africa {
+  bottom: 122px;
+  right: 343px;
+}
+.branch.europe {
+  top: 164px;
+  left: 561px;
+}
+.branch.america {
+  top: 211px;
+  left: 361px;
+}
+/* section3 3 */
+#sect3 {
+  width: 1200px;
+  padding-top: 200px;
+  padding-bottom: 150px;
+  margin: 0px auto;
+}
+#sect3 .inform_container {
+  padding: 0px 102px;
+}
+#sect3 .inform_container .inf_box {
+  float: left;
+  width: 483px;
+  height: 306px;
+}
+#sect3 .inform_container .inf_box:first-child {
+  margin-right: 30px;
+}
+.inf_box h1 {
+  text-align: center;
+  padding-bottom: 20px;
+}
+.inf_box table {
+  width: 100%;
+  font-family: "Noto Sans KR", sans-serif;
+}
+.inf_box table thead {
+  border-bottom: 2px solid #000;
+}
+.inf_box table thead tr th {
+  padding-bottom: 12px;
+  font-size: 15px;
+}
+.inf_box table thead tr th:nth-child(1) {
+  width: 75%;
+}
+.inf_box table thead tr th:nth-child(2) {
+  width: 25%;
+}
+.inf_box table tbody tr td {
+  padding: 5px 10px;
+  font-size: 12px;
+}
+.inf_box table tbody tr td:nth-child(2) {
+  text-align: center;
+}
+.inf_box .inf_more {
+  cursor: pointer;
+  text-align: right;
+  padding-top: 10px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 12px;
+  color: #818181;
+}
+/* tablet */
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  #sect1,
+  #sect2,
+  #sect3 {
+    width: 600px;
+  }
+  /* sect2 */
+  #sect2 .map_container .map_title {
+    top: 150px;
+  }
+  .map_container .map_title h2 {
+    font-size: 25px;
+  }
+  .map_container .map_menu {
+    left: 10px;
+    bottom: 130px;
+  }
+  .map_container .map_menu ul {
+    width: 150px;
+  }
+  .map_container .map_menu ul li {
+    width: 70px;
+    height: 25px;
+    line-height: 15px;
+    font-size: 10px;
+  }
+  .map_container .map_branch .branch {
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+  }
+  .map_container .map_branch .branch h3 {
+    font-size: 20px;
+    padding-bottom: 20px;
+  }
+  .map_container .map_branch .branch p {
+    font-size: 12px;
+  }
+  .map_container .map_branch .branch i {
+    top: 10px;
+    right: 10px;
+  }
+  .branch.asia {
+    top: 226px;
+    right: -12px;
+  }
+  .branch.africa {
+    bottom: 184px;
+    right: 121px;
+  }
+  .branch.europe {
+    top: 206px;
+    left: 281px;
+  }
+  .branch.america {
+    top: 230px;
+    left: 180px;
+  }
+  /* sect2 */
+  #sect3 .inform_container {
+    padding: 0px 20px;
+  }
+  #sect3 .inform_container .inf_box {
+    width: 100%;
+  }
+}
+
+/* mobile */
+@media screen and (max-width: 767px) {
+  #sect1,
+  #sect2,
+  #sect3 {
+    width: 300px;
+  }
+  /* sect1 */
+  .box {
+    width: 100%;
+  }
+  /* sect2 */
+  #sect2 .map_container {
+    height: 350px;
+  }
+  #sect2 .map_container .map_title {
+    left: 35px;
+    top: 10px;
+  }
+  .map_container .map_title h2 {
+    font-size: 25px;
+  }
+  .map_container .map_menu {
+    left: 0px;
+    bottom: 247px;
+  }
+  .map_container .map_menu ul {
+    width: 300px;
+  }
+  .map_container .map_menu ul li {
+    width: 70px;
+    height: 25px;
+    line-height: 15px;
+    font-size: 10px;
+  }
+  .map_container .map_branch .branch {
+    width: 300px;
+    height: 150px;
+    padding: 10px;
+  }
+  .map_container .map_branch .branch h3 {
+    font-size: 20px;
+    padding-bottom: 20px;
+  }
+  .map_container .map_branch .branch p {
+    font-size: 12px;
+  }
+  .map_container .map_branch .branch i {
+    top: 10px;
+    right: 10px;
+  }
+  .branch.asia,
+  .branch.africa,
+  .branch.europe,
+  .branch.america {
+    top: 245px;
+    left: 0px;
+  }
+  /* sect3 */
+  #sect3 .inform_container {
+    padding: 10px;
+  }
+  #sect3 .inform_container .inf_box {
+    width: 100%;
+  }
+  #sect3 .inform_container .inf_box:first-child {
+    margin-right: 0px;
+  }
+  .inf_box table tbody tr td {
+    padding: 5px 0px;
+  }
+}

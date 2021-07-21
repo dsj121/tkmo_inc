@@ -1,0 +1,85 @@
+#main_banner {
+  width: 100%;
+  height: calc(100vh - 88px);
+  background: #c0c0c0;
+  position: relative;
+}
+#main_banner .slide_container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+#main_banner .slide_container .slide {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-position: center;
+  background-size: cover;
+  z-index: 2;
+}
+#main_banner .slide_container .slide.before {
+  z-index: 3;
+}
+#main_banner .slide_container .slide.active {
+  z-index: 5;
+}
+.slide1 {
+  background: url(../images/slide_1.jpg);
+}
+.slide2 {
+  background: url(../images/slide_2.jpg);
+}
+.slide3 {
+  background: url(../images/slide_3.jpg);
+}
+#main_banner .slide_container .slide .slide_text_container {
+  position: absolute;
+  top: 50%;
+  left: 140px;
+  transform: translateY(-50%);
+}
+#main_banner .slide_container .slide .slide_text_container h1 {
+  font-family: "Noto Sans", sans-serif;
+  color: #fff;
+  font-size: 84px;
+  padding-bottom: 80px;
+}
+#main_banner .slide_container .slide .slide_text_container p {
+  font-family: "Noto Sans KR", sans-serif;
+  color: #fff;
+  font-size: 20px;
+}
+
+/* slide button */
+#main_banner .slide_btn_box {
+  position: absolute;
+  width: 50px;
+  height: 100%;
+  top: 0px;
+  right: 0px;
+  z-index: 7;
+  transition: ease-out 0.5s;
+}
+#main_banner .slide_btn_box:hover {
+  background-color: #141414a8;
+}
+#main_banner .slide_btn_box .btn_list {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  text-align: center;
+  transform: translateY(-50%);
+}
+#main_banner .slide_btn_box .btn_list i {
+  width: 100%;
+  font-size: 18px;
+  padding: 20px 0px;
+  cursor: pointer;
+  color: #cce6c4;
+}
+#main_banner .slide_btn_box .btn_list i.active {
+  color: #31b32b;
+}
