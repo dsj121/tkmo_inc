@@ -51,6 +51,7 @@
   font-family: "Noto Sans KR", sans-serif;
   color: #fff;
   font-size: 20px;
+  text-shadow: 1px 1px 14px #000;
 }
 
 /* slide button */
@@ -82,4 +83,25 @@
 }
 #main_banner .slide_btn_box .btn_list i.active {
   color: #31b32b;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  #main_banner .slide_container .slide .slide_text_container {
+    left: 100px;
+  }
+  #main_banner .slide_container .slide .slide_text_container h1 {
+    font-size: 64px;
+  }
+}
+@media screen and (max-width: 767px) {
+  #main_banner .slide_container .slide .slide_text_container {
+    left: 38px;
+  }
+  #main_banner .slide_container .slide .slide_text_container h1 {
+    font-size: 34px;
+    padding-bottom: 80px;
+  }
+  #main_banner .slide_container .slide .slide_text_container p {
+    font-size: 13px;
+  }
 }

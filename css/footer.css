@@ -18,9 +18,10 @@ footer .foot_container {
 .foot_container .foot_nav ul li {
   float: left;
   padding: 0px 10px;
-  color: #c0c0c0;
+  color: #808080;
   font-family: "Noto Sans KR", sans-serif;
   font-size: 12px;
+  cursor: pointer;
 }
 .foot_container .foot_address {
   padding-left: 10px;
