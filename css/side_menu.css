@@ -1,6 +1,7 @@
 .side_menu {
+  display: none;
   position: absolute;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   z-index: 100;
   top: 0;
@@ -51,9 +52,9 @@
 }
 .side_container .smp_container {
   position: absolute;
-  top: 300px;
+  top: 55%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
   opacity: 0;
 }
 .side_container .smp_container h1 {
@@ -91,4 +92,51 @@
   font-family: "Noto Sans KR", sans-serif;
   font-weight: normal;
   font-size: 15px;
+}
+
+/* tablet */
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .side_menu .side_sideBox {
+    width: 310px;
+  }
+  .side_sideBox .side_nav {
+    left: 20px;
+    width: 170px;
+  }
+  .side_sideBox .side_nav li a {
+    font-size: 25px;
+  }
+  .side_menu .side_container {
+    width: calc(100% - 310px);
+  }
+  .side_container .smp_container h1 {
+    font-size: 33px;
+  }
+  .smp_container .smp_menu {
+    width: 400px;
+  }
+  .smp_container .smp_menu > li {
+    width: 200px;
+  }
+  .smp_container .smp_menu > li > .smp_subMenu > li {
+    font-size: 13px;
+  }
+}
+
+/* mobile */
+@media screen and (max-width: 767px) {
+  .side_menu .side_sideBox {
+    width: 100%;
+  }
+  .side_menu .side_container {
+    display: none;
+  }
+  .side_sideBox .side_nav {
+    left: 20px;
+    transform: translateY(-50%);
+    width: 300px;
+  }
+  .side_sideBox .side_nav li a {
+    font-size: 25px;
+  }
 }
