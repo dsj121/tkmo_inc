@@ -16,6 +16,7 @@
   transition: all 0.5s ease;
   font-family: "Noto Sans KR", sans-serif;
   padding: 10px;
+  opacity: 0;
 }
 .box::after {
   width: 100%;
@@ -87,6 +88,7 @@
   width: 1200px;
   padding-top: 200px;
   margin: 0px auto;
+  overflow: hidden;
 }
 #sect2 .map_container {
   width: 100%;
@@ -96,6 +98,8 @@
   background-size: contain;
   background-repeat: no-repeat;
   position: relative;
+  left: 100%;
+  opacity: 0;
 }
 .map_container .map_title {
   position: absolute;

@@ -44,7 +44,6 @@ nav .menu_container .menu a {
   font-size: 18px;
   font-family: "Noto Sans", sans-serif;
   letter-spacing: 2px;
-  font-weight: 700;
 }
 nav .menu_container .menu:hover a {
   color: #0083ff;
@@ -61,7 +60,7 @@ nav .menu_container .menu:hover a {
   cursor: pointer;
   font-size: 45px;
   line-height: 88px;
-  color: #3b3b3b;
+  color: #8f8f8f;
 }
 
 /* tablet */
