@@ -1,6 +1,6 @@
 // on load event
 function introOnload() {
-  $(".banner img").animate({ top: 0 }, 1500);
+  $(".banner img").animate({ top: "-130px" }, 1500);
   $(".title h1").animate({ opacity: 1 }, 500, function () {
     $(".title p").animate({ opacity: 1, paddingTop: "30px" }, 500);
   });
