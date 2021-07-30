@@ -22,7 +22,44 @@
   position: relative;
   width: 710px;
   height: 100%;
-  background: #c0c0c0;
+}
+.side_menu .side_sideBox::after {
+  width: 100%;
+  height: 100%;
+  background: url(../images/side_1.png);
+  background-size: 100% 110%;
+  background-position-y: 0px;
+  background-repeat: no-repeat;
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+  opacity: 0;
+  transition: all 0.5s;
+}
+.side_menu .side_sideBox.changed::after {
+  background-position-y: -50px;
+  opacity: 0.75;
+}
+.side_menu .side_sideBox.changed.bg_01::after {
+  background-size: 100% 110%;
+  background-position-y: 0px;
+}
+.side_menu .side_sideBox.changed.bg_02::after {
+  background: url(../images/side_2.png);
+  background-size: 100% 110%;
+  background-position-y: 0px;
+}
+.side_menu .side_sideBox.changed.bg_03::after {
+  background: url(../images/side_3.png);
+  background-size: 100% 110%;
+  background-position-y: 0px;
+}
+.side_menu .side_sideBox.changed.bg_04::after {
+  background: url(../images/side_4.png);
+  background-size: 100% 110%;
+  background-position-y: 0px;
 }
 .side_sideBox .side_nav {
   position: absolute;
@@ -30,17 +67,23 @@
   left: 60px;
   transform: translateY(-50%);
   width: 400px;
+  background: #00000066;
+  opacity: 0;
 }
 .side_sideBox .side_nav li {
   width: 100%;
   float: left;
   margin-bottom: 50px;
+  padding-left: 15px;
+}
+.side_sideBox .side_nav li:first-child {
+  margin-top: 50px;
 }
 .side_sideBox .side_nav li a {
   font-family: "Noto Sans", sans-serif;
   font-size: 38px;
   font-weight: 700;
-  color: #fff;
+  color: #ffffff66;
   padding-left: 50px;
   opacity: 0;
 }
@@ -102,22 +145,25 @@
   }
   .side_sideBox .side_nav {
     left: 20px;
-    width: 170px;
+    width: 250px;
   }
   .side_sideBox .side_nav li a {
-    font-size: 25px;
+    font-size: 21px;
   }
   .side_menu .side_container {
     width: calc(100% - 310px);
   }
   .side_container .smp_container h1 {
-    font-size: 33px;
+    font-size: 28px;
   }
   .smp_container .smp_menu {
     width: 400px;
   }
   .smp_container .smp_menu > li {
     width: 200px;
+  }
+  .smp_container .smp_menu > li > a {
+    font-size: 21px;
   }
   .smp_container .smp_menu > li > .smp_subMenu > li {
     font-size: 13px;
@@ -126,6 +172,13 @@
 
 /* mobile */
 @media screen and (max-width: 767px) {
+  .side_menu i.close {
+    right: 20px;
+    top: 20px;
+    font-size: 20px;
+    z-index: 5;
+    color: #ffffff;
+  }
   .side_menu .side_sideBox {
     width: 100%;
   }
@@ -138,6 +191,6 @@
     width: 300px;
   }
   .side_sideBox .side_nav li a {
-    font-size: 25px;
+    font-size: 18px;
   }
 }

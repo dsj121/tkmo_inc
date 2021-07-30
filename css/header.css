@@ -16,13 +16,16 @@ header {
   z-index: 10;
 }
 /* logo */
-header .logo_box {
+header a .logo_box {
   position: absolute;
   left: 38px;
   top: 0px;
-  width: 88px;
+  width: 150px;
   height: 100%;
-  background: #c5c5c5;
+  background: url(../images/logo_01.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 /* nav */
 header nav {
@@ -65,6 +68,9 @@ nav .menu_container .menu:hover a {
 
 /* tablet */
 @media screen and (min-width: 768px) and (max-width: 1199px) {
+  header a .logo_box {
+    width: 95px;
+  }
   nav .menu_container .menu a {
     padding: 0px 20px;
     font-size: 14px;
@@ -79,9 +85,8 @@ nav .menu_container .menu:hover a {
   header {
     height: 46px;
   }
-  header .logo_box {
-    width: 46px;
-    height: 46px;
+  header a .logo_box {
+    width: 75px;
     left: 50%;
     transform: translateX(-50%);
   }

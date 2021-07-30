@@ -1,11 +1,26 @@
 // on load event
+let windowWidth = $(window).width();
+
 function introOnload() {
-  $(".banner img").animate({ top: "-130px" }, 1500);
+  $(".banner img").animate({ top: 0 }, 1500);
   $(".title h1").animate({ opacity: 1 }, 500, function () {
-    $(".title p").animate({ opacity: 1, paddingTop: "30px" }, 500);
+    $(".title p").animate({ opacity: 1 }, 500, function () {
+      $(".content_box").eq(0).animate({ left: 0, opacity: 1 }, 1000);
+    });
   });
 }
+
 introOnload();
+// if (windowWidth >= 1200) {
+//   introOnload();
+// } else {
+//   $(".banner img").css({ top: 0 });
+//   $(".title h1").animate({ opacity: 1 }, 500, function () {
+//     $(".title p").animate({ opacity: 1 }, 500, function () {
+//       $(".content_box").eq(0).animate({ left: 0, opacity: 1 }, 1000);
+//     });
+//   });
+// }
 
 $(window).on("scroll", function () {
   var windowHalf = $(window).scrollTop() + $(window).height() * 0.5;

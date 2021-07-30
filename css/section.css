@@ -1,7 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+hr {
+  width: 250px;
+  margin: 0px auto;
+  color: #a5a5a5;
+}
 /* section 1 */
 #sect1 {
   padding-top: 200px;
+  padding-bottom: 200px;
   margin: 0px auto;
   width: 1200px;
 }
@@ -25,7 +31,6 @@
   position: absolute;
   top: 0px;
   left: 0px;
-  opacity: 0.5;
   z-index: -1;
   transition: all 0.5s ease-out;
 }
@@ -56,24 +61,38 @@
 .box:hover {
   box-shadow: 8px 11px 15px 9px #3333338f;
 }
+.box i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 100px;
+  color: #fff;
+  opacity: 1;
+  transition: all 0.5s;
+}
+.box:hover i {
+  opacity: 0.2;
+}
 .box h3 {
   position: absolute;
   left: 30px;
   top: 30px;
   font-size: 28px;
-  color: #000;
+  color: #fff;
   text-shadow: none;
+  opacity: 0;
   transition: all 0.5s;
 }
 .box:hover h3 {
-  color: #fff;
+  opacity: 1;
   text-shadow: 2px 2px 2px #0000007b;
 }
 .box p {
   position: absolute;
   left: 30px;
   bottom: 70px;
-  font-size: 14px;
+  font-size: 16px;
   color: #fff;
   opacity: 0;
   transition: all 0.5s;
@@ -87,6 +106,7 @@
 #sect2 {
   width: 1200px;
   padding-top: 200px;
+  padding-bottom: 200px;
   margin: 0px auto;
   overflow: hidden;
 }
@@ -131,11 +151,6 @@
   font-family: "Noto Sans", sans-serif;
   cursor: pointer;
   background: #fff;
-  transition: all 0.5s;
-}
-.map_container .map_menu ul li:hover {
-  background: #008bfd;
-  color: #fff;
 }
 .map_container .map_branch {
   width: 100%;
@@ -224,6 +239,9 @@
 .inf_box table thead tr th:nth-child(2) {
   width: 25%;
 }
+.inf_box table tbody {
+  border-bottom: 1px solid #000;
+}
 .inf_box table tbody tr td {
   padding: 5px 10px;
   font-size: 12px;
@@ -246,6 +264,18 @@
   #sect3 {
     width: 600px;
   }
+  hr {
+    width: 100px;
+  }
+  .box i {
+    font-size: 80px;
+  }
+  .box h3 {
+    font-size: 26px;
+  }
+  .box p {
+    font-size: 14px;
+  }
   /* sect2 */
   #sect2 .map_container .map_title {
     top: 150px;
@@ -267,7 +297,7 @@
     font-size: 10px;
   }
   .map_container .map_branch .branch {
-    width: 150px;
+    width: 140px;
     height: 150px;
     padding: 10px;
   }
@@ -283,8 +313,8 @@
     right: 10px;
   }
   .branch.asia {
-    top: 226px;
-    right: -12px;
+    top: 232px;
+    right: 9px;
   }
   .branch.africa {
     bottom: 184px;
@@ -305,6 +335,19 @@
   #sect3 .inform_container .inf_box {
     width: 100%;
   }
+  /* sect3 */
+  .inf_box h1 {
+    font-size: 18px;
+  }
+  .inf_box table thead tr th {
+    font-size: 14px;
+  }
+  .inf_box table tbody tr td {
+    font-size: 11px;
+  }
+  .inf_box .inf_more {
+    font-size: 10px;
+  }
 }
 
 /* mobile */
@@ -314,24 +357,39 @@
   #sect3 {
     width: 300px;
   }
+  hr {
+    width: 80px;
+  }
   /* sect1 */
   .box {
     width: 100%;
   }
+  .box i {
+    font-size: 60px;
+  }
+  .box h3 {
+    font-size: 23px;
+  }
+  .box p {
+    font-size: 12px;
+  }
   /* sect2 */
   #sect2 .map_container {
-    height: 350px;
+    height: 400px;
   }
   #sect2 .map_container .map_title {
-    left: 35px;
+    width: 100%;
+    text-align: center;
+    left: 50%;
     top: 10px;
+    transform: translateX(-50%);
   }
   .map_container .map_title h2 {
     font-size: 25px;
   }
   .map_container .map_menu {
     left: 0px;
-    bottom: 247px;
+    bottom: 263px;
   }
   .map_container .map_menu ul {
     width: 300px;
@@ -362,7 +420,7 @@
   .branch.africa,
   .branch.europe,
   .branch.america {
-    top: 245px;
+    top: 249px;
     left: 0px;
   }
   /* sect3 */
@@ -371,11 +429,23 @@
   }
   #sect3 .inform_container .inf_box {
     width: 100%;
+    height: 190px;
+    margin-bottom: 80px;
   }
   #sect3 .inform_container .inf_box:first-child {
     margin-right: 0px;
   }
+  .inf_box h1 {
+    font-size: 16px;
+  }
+  .inf_box table thead tr th {
+    font-size: 12px;
+  }
   .inf_box table tbody tr td {
+    font-size: 10px;
     padding: 5px 0px;
+  }
+  .inf_box .inf_more {
+    font-size: 8px;
   }
 }

@@ -1,0 +1,124 @@
+#graph {
+  width: 1200px;
+  margin: 0px auto;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+/* graph text */
+#graph .graph_text {
+  width: 100%;
+  text-align: center;
+  font-family: "Noto Sans KR", sans-serif;
+}
+.graph_text h1 {
+  font-size: 35px;
+  padding-bottom: 20px;
+}
+.graph_text p {
+  font-size: 14px;
+}
+/* graph content */
+#graph > h3 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 28px;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 20px;
+}
+#graph > p {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 18px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 70px;
+}
+#graph .graph_content {
+  width: 900px;
+  height: 260px;
+  margin: 0px auto;
+}
+.graph_content .graph_box {
+  position: relative;
+  float: left;
+  width: 25%;
+  height: 100%;
+  border-bottom: 1px solid #000;
+}
+.graph_content .graph_box .graph_bar {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  height: 0px;
+  background: green;
+}
+.graph_content > .graph_box > .graph_bar > span {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "Noto Sans", sans-serif;
+  font-size: 12px;
+}
+.graph_content .graph_box .graph_tag {
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "Noto Sans", sans-serif;
+  font-size: 16px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  #graph {
+    width: 600px;
+  }
+  .graph_text h1 {
+    font-size: 28px;
+  }
+  .graph_text p {
+    font-size: 12px;
+  }
+  #graph > h3 {
+    font-size: 20px;
+  }
+  #graph > p {
+    font-size: 11px;
+  }
+  #graph .graph_content {
+    width: 500px;
+  }
+  .graph_content .graph_box .graph_bar span {
+    font-size: 10px;
+  }
+  .graph_content .graph_box .graph_tag {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 767px) {
+  #graph {
+    width: 300px;
+  }
+  .graph_text h1 {
+    font-size: 24px;
+  }
+  .graph_text p {
+    font-size: 11px;
+  }
+  #graph > h3 {
+    font-size: 18px;
+  }
+  #graph > p {
+    font-size: 10px;
+  }
+  #graph .graph_content {
+    width: 250px;
+  }
+  .graph_content .graph_box .graph_bar span {
+    font-size: 8px;
+  }
+  .graph_content .graph_box .graph_tag {
+    font-size: 12px;
+  }
+}

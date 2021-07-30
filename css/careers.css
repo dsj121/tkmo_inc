@@ -1,0 +1,206 @@
+#careers {
+  width: 100%;
+}
+#careers .banner {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+#careers .banner img {
+  position: relative;
+  top: -50%;
+  width: 100%;
+  height: 150%;
+  object-fit: cover;
+}
+.car_content_container {
+  width: 1200px;
+  margin: 0px auto;
+}
+/* title */
+.car_content_container .title {
+  width: 100%;
+  text-align: center;
+}
+.car_content_container .title h1 {
+  padding-top: 75px;
+  font-size: 38px;
+  /* opacity: 0; */
+}
+.car_content_container .title p {
+  padding-top: 30px;
+  padding-bottom: 60px;
+  font-size: 14px;
+  color: #808080;
+  /* opacity: 0; */
+}
+hr {
+  width: 250px;
+  margin: 0px auto;
+  color: #a5a5a5;
+}
+/* icon */
+.car_content_container .icon_container {
+  width: 900px;
+  margin: 60px auto 0px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 300px;
+  column-gap: 55px;
+}
+.icon_container .iconBox {
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #dedede;
+  cursor: pointer;
+}
+.icon_container .iconBox i {
+  font-size: 60px;
+  line-height: 160px;
+  color: #928fa9;
+  transition: all 0.5s;
+}
+.icon_container .iconBox:hover i {
+  font-size: 80px;
+}
+.icon_container .iconBox h4 {
+  font-size: 22px;
+  padding-bottom: 40px;
+}
+.icon_container .iconBox p {
+  font-size: 12px;
+}
+/* text */
+.text_container {
+  position: relative;
+  width: 1000px;
+  height: 600px;
+  margin: 60px auto;
+  /* height: ; */
+}
+.text_container .textBox {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+  font-family: "Noto Sans KR", sans-serif;
+  opacity: 0;
+}
+.text_container .textBox.active {
+  opacity: 1;
+}
+.text_container .textBox img {
+  width: 100%;
+}
+.text_container .textBox h1 {
+  font-size: 38px;
+  position: absolute;
+  top: 125px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+.text_container .textBox p {
+  font-size: 16px;
+  width: 80%;
+  padding: 15px;
+  margin: 30px auto 0px;
+  text-align: left;
+  border: 1px solid #dedede;
+}
+
+/* tablet */
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  hr {
+    width: 100px;
+  }
+  .car_content_container {
+    width: 600px;
+  }
+  .car_content_container .title h1 {
+    font-size: 28px;
+  }
+  .car_content_container .title p {
+    font-size: 12px;
+  }
+  .car_content_container .icon_container {
+    width: 550px;
+    column-gap: 20px;
+    grid-template-rows: 255px;
+  }
+  .icon_container .iconBox i {
+    font-size: 50px;
+    line-height: 100px;
+  }
+  .icon_container .iconBox:hover i {
+    font-size: 60px;
+  }
+  .icon_container .iconBox h4 {
+    font-size: 18px;
+  }
+  .icon_container .iconBox p {
+    font-size: 10px;
+  }
+  .text_container {
+    width: 600px;
+    height: 500px;
+  }
+  .text_container .textBox h1 {
+    top: 75px;
+    font-size: 28px;
+  }
+  .text_container .textBox p {
+    font-size: 14px;
+  }
+}
+
+/* mobile */
+@media screen and (max-width: 767px) {
+  hr {
+    width: 80px;
+  }
+  .car_content_container {
+    width: 300px;
+  }
+  .car_content_container .title h1 {
+    font-size: 26px;
+  }
+  .car_content_container .title p {
+    font-size: 10px;
+  }
+  .car_content_container .icon_container {
+    width: 285px;
+    column-gap: 0px;
+    grid-template-rows: 95px;
+  }
+  .icon_container .iconBox {
+    padding: 5px;
+  }
+  .icon_container .iconBox i {
+    font-size: 30px;
+    line-height: 50px;
+  }
+  .icon_container .iconBox:hover i {
+    font-size: 40px;
+  }
+  .icon_container .iconBox h4 {
+    font-size: 16px;
+    padding-bottom: 0px;
+  }
+  .icon_container .iconBox p {
+    display: none;
+  }
+  .text_container {
+    width: 280px;
+    height: 500px;
+  }
+  .text_container .textBox h1 {
+    top: 35px;
+    font-size: 20px;
+  }
+  .text_container .textBox p {
+    font-size: 10px;
+  }
+}

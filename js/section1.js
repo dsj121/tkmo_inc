@@ -5,7 +5,7 @@ $(window).on("scroll", function () {
   $(".box").each(function () {
     var offTop = $(this).offset().top;
     if (windowHalf >= offTop) {
-      $(this).animate({ opacity: 1 }, 500);
+      $(this).stop().animate({ opacity: 1 }, 500);
     }
   });
 });

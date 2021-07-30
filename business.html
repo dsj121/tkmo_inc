@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/side_menu.css" />
     <link rel="stylesheet" href="css/business.css" />
     <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/scroll_btn.css" />
     <script src="https://kit.fontawesome.com/c0ef167c3c.js" crossorigin="anonymous"></script>
     <script src="js/jquery-3.6.0.min.js"></script>
     <style></style>
@@ -17,7 +18,9 @@
   <body>
     <!-- header -->
     <header>
-      <div class="logo_box"></div>
+      <a href="index.html">
+        <div class="logo_box"></div>
+      </a>
       <nav>
         <div class="menu_container clear">
           <div class="menu">
@@ -27,10 +30,10 @@
             <a href="business.html">BUSINESS</a>
           </div>
           <div class="menu">
-            <a href="recruit.html">RECRUIT</a>
+            <a href="careers.html">CAREERS</a>
           </div>
           <div class="menu">
-            <a href="community">COMMUNITY</a>
+            <a href="community.html">COMMUNITY</a>
           </div>
         </div>
       </nav>
@@ -49,10 +52,10 @@
             <a href="business.html">BUSINESS</a>
           </li>
           <li>
-            <a href="recurit.html">RECRUIT</a>
+            <a href="careers.html">CAREERS</a>
           </li>
           <li>
-            <a href="community">COMMUNITY</a>
+            <a href="community.html">COMMUNITY</a>
           </li>
         </ul>
       </div>
@@ -77,7 +80,7 @@
               </ul>
             </li>
             <li>
-              <a href="recruit.html">RECRUIT</a>
+              <a href="careers.html">CAREERS</a>
               <ul class="smp_subMenu clear">
                 <li>인재상</li>
                 <li>경영</li>
@@ -100,7 +103,68 @@
       </div>
     </div>
     <script src="js/side_menu.js"></script>
-    <div id="business"></div>
+    <div id="business">
+      <div class="banner">
+        <img src="images/bis_banner.png" alt="" />
+      </div>
+      <div class="bis_content_container">
+        <div class="title">
+          <h1>사업소개</h1>
+          <p>미래 첨단기술을 선도하는 티끌모아</p>
+        </div>
+        <hr />
+        <div class="content_summary">
+          <p>
+            <span>티끌모아는 </span><br />
+            일상생활에서 나오는 재활용쓰레기와 폐전자제품,
+            <br />
+            건축폐자재, 폐차된 차량들을 수거해 <br />
+            재사용이 가능한 제품이나 자원으로 환원하는 <br />
+            자원순환사업을 진행합니다. <br />
+            현재 전세계 주요 도시와 산업현장에서 <br />
+            정부, 지자체 위탁사업과 파트너계약 사업을 병행하며 <br />
+            사업을 확장하고 있습니다.
+          </p>
+        </div>
+        <hr />
+        <div class="content_menu">
+          <ul class="clear">
+            <li class="active">재활용</li>
+            <li>순환건축자재</li>
+            <li>폐전자제품</li>
+            <li>폐차체와 부속품</li>
+          </ul>
+        </div>
+        <div class="content_text">
+          <img src="images/bis_content_01.png" alt="" />
+          <div class="text active">
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente pariatur necessitatibus quo, officia laborum aliquid, id ut, cum iste voluptatum doloribus alias. Facilis natus
+              temporibus aliquam vel cumque sunt labore.
+            </p>
+          </div>
+          <div class="text">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt neque laborum, amet voluptas eius mollitia totam minima voluptatem omnis architecto, delectus magni tenetur? Rerum natus
+              maiores molestias fugit sit necessitatibus!
+            </p>
+          </div>
+          <div class="text">
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum rem, accusamus incidunt nam veritatis, consequatur dicta illum provident id, est beatae? Saepe quod ipsum perspiciatis?
+              Ducimus nisi atque tenetur deserunt!
+            </p>
+          </div>
+          <div class="text">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quaerat quidem nesciunt beatae fugit cumque, autem doloribus. Voluptates fuga, distinctio atque, repellat quasi delectus,
+              pariatur voluptatibus laborum nisi ad consequuntur?
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/business.js"></script>
     <!-- footer -->
     <footer>
       <div class="foot_container">
@@ -131,5 +195,9 @@
         </div>
       </div>
     </footer>
+    <div id="scroll_btn">
+      <i class="fas fa-arrow-up"></i>
+    </div>
+    <script src="js/scroll_btn.js"></script>
   </body>
 </html>
