@@ -12,10 +12,15 @@ $(".branch > i").on("click", function () {
 $(".map_menu > ul > li").eq(0).trigger("click");
 
 // scroll animation
+let doneSect2 = 0;
 $(window).on("scroll", function () {
-  windowHalf = $(window).scrollTop() + $(window).height() * 0.7;
+  windowHalf = $(window).scrollTop() + $(window).height() * 0.8;
   var offTop = $(".map_container").offset().top;
   if (windowHalf >= offTop) {
+    if (doneSect2 > 0) {
+      return false;
+    }
     $(".map_container").animate({ opacity: 1, left: 0 }, 1000);
+    doneSect2 = 1;
   }
 });

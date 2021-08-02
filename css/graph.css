@@ -46,6 +46,7 @@
 }
 .graph_content .graph_box .graph_bar {
   position: absolute;
+  display: inline !important;
   bottom: 0px;
   left: 50%;
   transform: translateX(-50%);
@@ -60,6 +61,7 @@
   transform: translateX(-50%);
   font-family: "Noto Sans", sans-serif;
   font-size: 12px;
+  opacity: 0;
 }
 .graph_content .graph_box .graph_tag {
   position: absolute;
